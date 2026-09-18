@@ -1,0 +1,2 @@
+DROP TABLE Inventory;
+DROP TABLE Item;
