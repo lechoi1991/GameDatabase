@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:/Users/Admin/Documents/GitHub/GameDatabase/DAY02/Test.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1710"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><table title="Player" custom_title="0" dock_id="4" table="4,6:mainPlayer"/><dock_state state="000000ff00000000fd0000000100000002000005a700000391fc0100000004fb000000160064006f0063006b00420072006f00770073006500310100000000ffffffff0000000000000000fb000000160064006f0063006b00420072006f00770073006500320100000000000002340000000000000000fb000000160064006f0063006b00420072006f00770073006500330100000000000002340000000000000000fb000000160064006f0063006b00420072006f00770073006500340100000000000005a70000015100ffffff000002960000000000000004000000040000000800000008fc00000000"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="Inventory" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="63"/><column index="2" value="50"/><column index="3" value="62"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Item" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="48"/><column index="2" value="67"/><column index="3" value="41"/><column index="4" value="70"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="ItemConstraintTest" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="48"/><column index="2" value="127"/><column index="3" value="42"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Player" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="62"/><column index="2" value="46"/><column index="3" value="38"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1*">CREATE TABLE Item(
+	itemId INTEGER PRIMARY KEY,
+	name TEXT NOT NULL,
+	price INTEGER NOT NULL);</sql><sql name="SQL 2*">INSERT INTO Item (itemId, name, price)
+VALUES (1, '회복 포션', 30);</sql><sql name="SQL 3*">INSERT INTO Item (itemId, name, price)
+VALUES (2, '철 검', 100);
+
+INSERT INTO Item (itemId, name, price)
+VALUES (3, '나무 방패', 60);</sql><sql name="SQL 4*">SELECT name, price
+FROM Item
+WHERE price &gt;= 50;</sql><sql name="SQL 5*">UPDATE Item
+SET price = 40
+where itemId = 1;</sql><sql name="SQL 6*">DELETE FROM Item
+WHERE itemId = 1;</sql><sql name="SQL 7*">SELECT PlayerId, Gold
+FROM Player
+WHERE PlayerId = 1;</sql><sql name="SQL 9*">SELECT PlayerId, itemId, Quantity
+FROM Inventory
+WHERE PlayerId = 1 AND itemId = 1;</sql><sql name="SQL 8*">COMMIT;
+
+BEGIN;
+
+UPDATE Player
+SET Gold = 100
+WHERE PlayerId = 1 AND Gold &gt;= 0;
+
+UPDATE Inventory
+SET Quantity = -1
+WHERE PlayerId = 1 And itemId = 1;
+
+ROLLBACK;</sql><current_tab id="8"/></tab_sql></sqlb_project>
