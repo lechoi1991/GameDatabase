@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Tranjaction")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+561a429752ec382fb2fe8ea50f5226af22ae60ae")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+98a3253bd925a5f22705cc34252030adb391d25c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Tranjaction")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Tranjaction")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

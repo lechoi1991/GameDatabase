@@ -10,6 +10,15 @@ namespace Transaction
             int playerId = 1;
             int itemId = 1;
             int price = 30;
+            int quantity = 3;
+
+            if (quantity <= 0)
+            {
+                Console.WriteLine("구매 수량은 1개 이상이어야 합니다.");
+                return;
+            }
+
+            int totalPrice = price * quantity;
 
             using (SqliteConnection connection = new SqliteConnection("Data Source=test.db"))
             {
@@ -29,10 +38,12 @@ namespace Transaction
                         {
                             spendGold.Transaction = transaction;
                             spendGold.CommandText = @"
-                            UPDATE Player SET Gold = Gold - $price
-                            WHERE PlayerId = $playerId AND Gold >= $price;
+                            UPDATE Player
+                            SET Gold = Gold - $totalPrice
+                            WHERE PlayerId = $playerId
+                             AND Gold >= $totalPrice;
                             ";
-                            spendGold.Parameters.AddWithValue("$price", price);
+                            spendGold.Parameters.AddWithValue("$totalPrice", totalPrice);
                             spendGold.Parameters.AddWithValue("$playerId", playerId);
 
                             if (spendGold.ExecuteNonQuery() != 1)
@@ -46,22 +57,24 @@ namespace Transaction
                             additem.Transaction = transaction;
                             additem.CommandText = @"
                             INSERT INTO Inventory (PlayerId, ItemId, Quantity)
-                            VALUES ($playerId, $itemId, 1)
+                            VALUES ($playerId, $itemId, $quantity)
                             ON CONFLICT (PlayerId, ItemId)
-                            DO UPDATE SET Quantity = Quantity + 1;
+                            DO UPDATE SET Quantity = Quantity + $quantity;
                             ";
                             
                             additem.Parameters.AddWithValue("$playerId", playerId);
                             additem.Parameters.AddWithValue("$itemId", itemId);
+                            additem.Parameters.AddWithValue("$quantity", quantity);
 
                             if (additem.ExecuteNonQuery() != 1)
                             {
-                                throw new InvalidOperationException("인벤토리에 해당 아이템 행이 없습니다.");
+                                throw new InvalidOperationException("아이템 추가에 실패했습니다.");
                             }
                         }
 
                         transaction.Commit();
-                        Console.WriteLine("구매를 완료했습니다.");
+                        Console.WriteLine($"{quantity}개 구매를 완료했습니다.");
+                        Console.WriteLine($"총 {totalPrice} 골드를 사용했습니다.");
                     }
                     catch (Exception exception)
                     {
