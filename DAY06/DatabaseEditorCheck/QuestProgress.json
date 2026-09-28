@@ -1,0 +1,9 @@
+{
+    "playerId": 1,
+    "questId": "GoblinHunt",
+    "killCount": 3,
+    "targetCount": 10,
+    "isCompleted": false,
+    "rewardIds": ["Potion", "Gold"],
+    "lastSavedAt": "2026-09-22T10:15:00"
+}

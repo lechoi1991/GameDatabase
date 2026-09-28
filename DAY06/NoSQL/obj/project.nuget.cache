@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "CE3Vn8zll5M=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Admin\\Documents\\GitHub\\GameDatabase\\DAY06\\NoSQL\\NoSQL.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\litedb\\5.0.21\\litedb.5.0.21.nupkg.sha512"
+  ],
+  "logs": []
+}
