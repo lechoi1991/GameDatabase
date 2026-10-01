@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "lCKt0bfWMEQ=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Admin\\Downloads\\GameDatabaseAssessment\\LiteDBProject\\LiteDBProject.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\litedb\\5.0.21\\litedb.5.0.21.nupkg.sha512"
+  ],
+  "logs": []
+}

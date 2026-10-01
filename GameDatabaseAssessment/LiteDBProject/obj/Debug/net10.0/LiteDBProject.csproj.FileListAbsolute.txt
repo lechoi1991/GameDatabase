@@ -1,0 +1,17 @@
+C:\Users\Admin\Downloads\GameDatabaseAssessment\LiteDBProject\bin\Debug\net10.0\LiteDBProject.exe
+C:\Users\Admin\Downloads\GameDatabaseAssessment\LiteDBProject\bin\Debug\net10.0\LiteDBProject.deps.json
+C:\Users\Admin\Downloads\GameDatabaseAssessment\LiteDBProject\bin\Debug\net10.0\LiteDBProject.runtimeconfig.json
+C:\Users\Admin\Downloads\GameDatabaseAssessment\LiteDBProject\bin\Debug\net10.0\LiteDBProject.dll
+C:\Users\Admin\Downloads\GameDatabaseAssessment\LiteDBProject\bin\Debug\net10.0\LiteDBProject.pdb
+C:\Users\Admin\Downloads\GameDatabaseAssessment\LiteDBProject\bin\Debug\net10.0\LiteDB.dll
+C:\Users\Admin\Downloads\GameDatabaseAssessment\LiteDBProject\obj\Debug\net10.0\LiteDBProject.csproj.AssemblyReference.cache
+C:\Users\Admin\Downloads\GameDatabaseAssessment\LiteDBProject\obj\Debug\net10.0\LiteDBProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Downloads\GameDatabaseAssessment\LiteDBProject\obj\Debug\net10.0\LiteDBProject.AssemblyInfoInputs.cache
+C:\Users\Admin\Downloads\GameDatabaseAssessment\LiteDBProject\obj\Debug\net10.0\LiteDBProject.AssemblyInfo.cs
+C:\Users\Admin\Downloads\GameDatabaseAssessment\LiteDBProject\obj\Debug\net10.0\LiteDBProject.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Downloads\GameDatabaseAssessment\LiteDBProject\obj\Debug\net10.0\LiteDBPr.C2CE57BE.Up2Date
+C:\Users\Admin\Downloads\GameDatabaseAssessment\LiteDBProject\obj\Debug\net10.0\LiteDBProject.dll
+C:\Users\Admin\Downloads\GameDatabaseAssessment\LiteDBProject\obj\Debug\net10.0\refint\LiteDBProject.dll
+C:\Users\Admin\Downloads\GameDatabaseAssessment\LiteDBProject\obj\Debug\net10.0\LiteDBProject.pdb
+C:\Users\Admin\Downloads\GameDatabaseAssessment\LiteDBProject\obj\Debug\net10.0\LiteDBProject.genruntimeconfig.cache
+C:\Users\Admin\Downloads\GameDatabaseAssessment\LiteDBProject\obj\Debug\net10.0\ref\LiteDBProject.dll

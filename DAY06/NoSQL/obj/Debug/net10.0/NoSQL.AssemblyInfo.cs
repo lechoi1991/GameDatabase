@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NoSQL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+75bd35694b43d60a9ed89ca0d500dd522384df01")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+025d8c1dfe2d269ac7bbdc8fe637f9ed709eda5a")]
 [assembly: System.Reflection.AssemblyProductAttribute("NoSQL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NoSQL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
